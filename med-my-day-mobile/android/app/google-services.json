@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "779535392041",
+    "project_id": "med-my-day",
+    "storage_bucket": "med-my-day.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779535392041:android:da3bb4cd1ea05baf022b38",
+        "android_client_info": {
+          "package_name": "com.example.medmyday_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779535392041-grfsahsq72v5r832fgefrnd60gn703be.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwiLPhf4RvgRd-34aZV5ZPlPCZRtjTRdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "779535392041-grfsahsq72v5r832fgefrnd60gn703be.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
