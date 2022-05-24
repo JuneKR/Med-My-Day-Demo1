@@ -13,7 +13,19 @@ void main() async {
   NotificationService().initNotification();
 
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    // Replace with actual values
+    options: const FirebaseOptions(
+        apiKey: "AIzaSyAoOz7-SguLNzIFMhOmMwjZztJPL2EXX2w",
+        authDomain: "med-my-day.firebaseapp.com",
+        projectId: "med-my-day",
+        storageBucket: "med-my-day.appspot.com",
+        messagingSenderId: "779535392041",
+        appId: "1:779535392041:web:e620abe05a7ecb22022b38",
+        measurementId: "G-QYQSD0X8D9"
+    ),
+  );
   runApp(const MyApp());
 }
 
@@ -48,6 +60,5 @@ class MyApp extends StatelessWidget {
   //   );
   // }
 }
-
 
 

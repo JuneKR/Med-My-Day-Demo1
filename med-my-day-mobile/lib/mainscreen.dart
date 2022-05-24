@@ -135,7 +135,7 @@ class _MainScreenState extends State<MainScreen> {
                     .get();
                 var reminder = 'Reminder!';
                 var details =
-                    "${"Do not for goet your " + variable['druglist.title'] + " QTY: " + variable['druglist.amount'].toString()} with in two Days at MedMyDay Station!";
+                    "${"Do not forget your " + variable['druglist.title'] + " QTY: " + variable['druglist.amount'].toString()} with in two Days at MedMyDay Station!";
                 NotificationService().showNotification(0, reminder, details, 1);
               },
               child: Container(
@@ -230,7 +230,7 @@ class _MainScreenState extends State<MainScreen> {
         builder: (BuildContext context){
           return const CupertinoAlertDialog(
             title: Icon(Icons.warning_rounded),
-            content: Text('Sign Out Successly'),
+            content: Text('Signed Out Successfully'),
             actions: [
               CupertinoDialogAction(child: Text('OK')),
             ],
