@@ -1,11 +1,10 @@
 
 
-import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:medmyday_demo/loginpage.dart';
+import 'package:timezone/data/latest.dart' as tz;
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -17,6 +16,7 @@ class LoginPage extends StatefulWidget {
 enum FormType { login, register }
 
 class _LoginPageState extends State<LoginPage> {
+
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   final formKey = GlobalKey<FormState>();
@@ -24,11 +24,6 @@ class _LoginPageState extends State<LoginPage> {
   late String _password = '';
   FormType _formType = FormType.login;
 
-  void dispose() {
-    nameController.dispose();
-    passwordController.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -205,7 +200,6 @@ class _LoginPageState extends State<LoginPage> {
           // print('Signed in: ${user.uid}');
           showL(context);
 
-
         } else{
           // final User user = (await FirebaseAuth.instance
           //     .createUserWithEmailAndPassword(email: _email, password: _password))
@@ -271,11 +265,5 @@ class _LoginPageState extends State<LoginPage> {
           );
         });
   }
-// Future logIn() async {
-//   await FirebaseAuth.instance.signInWithEmailAndPassword(
-//     email: nameController.text.trim(),
-//     password: passwordController.text.trim(),
-//   );
-// }
 
 }
